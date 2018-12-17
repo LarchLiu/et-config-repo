@@ -1,5 +1,5 @@
 server:
-  port: 6666
+  port: 80
 
 spring:
   http:
@@ -19,7 +19,7 @@ zuul:
   forceOriginalQueryStringEncoding: true
   routes:
     order-route:
-      path: /order/**
+      path: /api/v1/order/**
       sensitiveHeaders:
       #      strip-prefix: false
       service-id: order-service
