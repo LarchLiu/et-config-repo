@@ -1,5 +1,5 @@
 server:
-  port: 6668
+  port: 6666
 
 spring:
   http:
@@ -22,7 +22,7 @@ zuul:
       path: /order/**
       sensitiveHeaders:
       #      strip-prefix: false
-      service-id: paascloud-provider-uac
+      service-id: order-service
       ribbon:
         eager-load:
           enabled: true
