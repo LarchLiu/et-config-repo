@@ -18,8 +18,8 @@ zuul:
     connect-timeout-millis: 60000
   forceOriginalQueryStringEncoding: true
   routes:
-    uac-route:
-      path: /uac/**
+    order-route:
+      path: /order/**
       sensitiveHeaders:
       #      strip-prefix: false
       service-id: paascloud-provider-uac
