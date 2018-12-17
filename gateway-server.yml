@@ -91,6 +91,4 @@ zuul:
         OkToRetryOnAllOperations: false
         ConnectTimeout: 10000
         ReadTimeout: 10000
-  add-proxy-headers: true
-  add-host-header: true
 
