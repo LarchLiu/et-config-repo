@@ -23,3 +23,11 @@ zuul:
       sensitiveHeaders:
       #      strip-prefix: false
       service-id: order-service
+      ribbon:
+        eager-load:
+          enabled: true
+        MaxAutoRetries: 1
+        MaxAutoRetriesNextServer: 2
+        OkToRetryOnAllOperations: false
+        ConnectTimeout: 10000
+        ReadTimeout: 10000
