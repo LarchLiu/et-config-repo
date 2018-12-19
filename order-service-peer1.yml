@@ -1,18 +1,2 @@
 server:
   port: 7000
-hystrix:
-  threadpool:
-    default:
-      coreSize: 150
-      #      maxQueueSize: 0
-      queueSizeRejectionThreshold: 150
-  command:
-    default:
-      circuitBreaker:
-        requestVolumeThreshold: 1000
-      execution:
-        timeout:
-          enabled: false
-        isolation:
-          thread:
-            timeoutInMilliseconds: 10000
