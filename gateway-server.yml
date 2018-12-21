@@ -27,7 +27,15 @@ spring:
 #zuul:
 #  semaphore:
 #    max-semaphores: 200    #并发量
-  
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+                  
 zuul:
   semaphore:
     max-semaphores: 200    #并发量
