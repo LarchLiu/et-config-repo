@@ -13,16 +13,16 @@ spring:
       max-file-size: 50MB
       
 # 两种方法均可
-#zuul:
-#  ribbonIsolationStrategy: THREAD
-#
-#hystrix:
-#  threadpool:
-#    default:
-#      coreSize: 10
-#      maximumSize: 200   #并发量
-#      allowMaximumSizeToDivergeFromCoreSize: true
-#      maxQueueSize: -1
+zuul:
+  ribbonIsolationStrategy: THREAD
+
+hystrix:
+  threadpool:
+    default:
+      coreSize: 10
+      maximumSize: 200   #并发量
+      allowMaximumSizeToDivergeFromCoreSize: true
+      maxQueueSize: -1
 
 #zuul:
 #  semaphore:
