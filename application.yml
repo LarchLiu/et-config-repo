@@ -6,5 +6,7 @@ eureka:
       prefer-ip-address: true
 
 ribbon:
+  ConnectTimeout: 10000
+  ReadTimeout: 10000
   eureka:
     enabled: true
