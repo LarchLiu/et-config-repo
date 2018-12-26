@@ -37,8 +37,6 @@ hystrix:
             timeoutInMilliseconds: 240000
                   
 zuul:
-  semaphore:
-    max-semaphores: 200    #并发量
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
