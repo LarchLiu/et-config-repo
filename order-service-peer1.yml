@@ -1,2 +1,4 @@
 server:
   port: 7000
+test: hello test
+  
