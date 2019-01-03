@@ -1,3 +1,4 @@
 server:
   port: 7001
   
+test: hello-test2 
